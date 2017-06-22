@@ -1,0 +1,24 @@
+package JavaPrograms;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+public class ReverseString {
+	public static void main(String ags[]){
+	Scanner obj=new Scanner(System.in);
+	System.out.println("Enter a string\n");
+	String a;
+	a=obj.nextLine();
+	
+	int l;
+	l=a.length();
+	char[] b=new char[l];
+	int j=0;
+	for(int i=l-1;i>=0;i--)
+	{
+		b[j]=a.charAt(i);
+	j++;
+	}
+	String c=new String(b);
+	System.out.println(c);
+ 	}
+}
