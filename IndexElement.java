@@ -3,6 +3,17 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 public class IndexElement {
+	public static void sameindex (int[] arr1)
+	{
+		for(int i=0;i<arr1.length;i++)
+		{
+			if(arr1[i]==i)
+			{
+				System.out.println("Array index "+ i +"contain the element "+arr1[i]+ "  same as index");
+			}
+		}
+
+	}
 	public static void main(String ags[]){
 		Scanner obj=new Scanner(System.in);
 		System.out.println("Enter array size");
@@ -16,14 +27,8 @@ public class IndexElement {
 			{
 				arr[i]=obj.nextInt();
 			}
-			for(int i=0;i<sz;i++)
-			{
-				if(arr[i]==i)
-				{
-					System.out.println("Array index "+ i +"contain the element "+arr[i]+ "  same as index");
-				}
-			}
-			
+			sameindex(arr);
+						
 		}
 		catch(InputMismatchException e)
 		{
