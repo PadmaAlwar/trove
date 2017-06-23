@@ -13,12 +13,19 @@ public class ReverseString {
 	l=a.length();
 	char[] b=new char[l];
 	int j=0;
+	try
+	{
 	for(int i=l-1;i>=0;i--)
 	{
 		b[j]=a.charAt(i);
 	j++;
 	}
 	String c=new String(b);
+	}
+	catch(InputMismatchException e)
+	{
+	System.out.print("Not a number");
+	}
 	System.out.println(c);
  	}
 }
