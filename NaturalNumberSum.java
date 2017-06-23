@@ -8,12 +8,18 @@ public class NaturalNumberSum {
 		Scanner obj=new Scanner(System.in);
 		System.out.println("Enter value of n:");
 		int n=obj.nextInt();
+		try
+		{
 		for(int i=1;i<=n;i++)
 		{
 			sum=sum+i;
 		}
 		System.out.println("Sum:"+sum);
-		
+		}
+		catch(InputMismatchException e)
+		{
+			System.out.println("Not a number");
+		}
 	}
 
 }
