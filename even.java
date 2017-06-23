@@ -11,6 +11,8 @@ public class even {
            System.out.println("Enter a min number:-");
 		   num=obj.nextInt();
 		   num1=obj.nextInt();
+		try
+		{
 		   if(num%2==0)
 			   a=num;
 		   else
@@ -25,4 +27,9 @@ public class even {
 		        
 	        }
    	}   
+	catch(InputMismatchException e)
+	{
+	 System.out.println("Not a number")
+	}
+	}
 }
