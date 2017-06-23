@@ -8,6 +8,8 @@ public class DigitCount {
 		Scanner obj=new Scanner(System.in);
 	   System.out.println("Enter a number:-");
 	   num=obj.nextInt();
+		try
+		{
 	   if(num<0)
 	   {
 	   num=num * -1;
@@ -21,6 +23,9 @@ public class DigitCount {
 	   num=num/10;
 	   count++;
 	   }
+		}
+		catch(InputMismatchException e)
+		{System.out.println("Not a number");}
 	     System.out.println(count);
 }
 }
